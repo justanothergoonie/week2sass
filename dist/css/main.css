@@ -59,16 +59,7 @@ table {
 body {
 	background: #fffdf3;
 	color: #000000;
-}
-
-footer {
-	background: #1b1c21;
-	color: #ffffff;
-	padding: 20px;
-}
-
-article {
-	width: 33.33333%;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 article h2 {
@@ -77,10 +68,20 @@ article h2 {
 
 h1 {
 	font-size: 2rem;
+	font-weight: bold;
+	margin: 10px auto;
 }
 
 h2 {
 	font-size: 1.6rem;
+	font-weight: bold;
+	margin: 10px auto;
+}
+
+footer {
+	background: #1b1c21;
+	color: #ffffff;
+	padding: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */
