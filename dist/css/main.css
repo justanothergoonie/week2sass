@@ -56,4 +56,18 @@ table {
 	box-sizing: border-box;
 }
 
+body {
+	background: #fffdf3;
+}
+
+footer {
+	background: #1b1c21;
+	color: #ffffff;
+	padding: 20px;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
 /*# sourceMappingURL=main.css.map */

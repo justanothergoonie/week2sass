@@ -1,5 +1,23 @@
 @import 'reset';
 
+$primary-background: #fffdf3;
+$secondary-background: #1b1c21;
+
+$primary-text-color: #000000;
+$secondary-text-color: #ffffff;
 * {
 	box-sizing: border-box;
+}
+
+body {
+	background: $primary-background;
+}
+footer {
+	background: $secondary-background;
+	color: $secondary-text-color;
+	padding: 20px;
+}
+
+h1 {
+	font-size: 2rem;
 }
