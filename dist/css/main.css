@@ -74,6 +74,11 @@ h2 {
 	margin: 10px auto;
 }
 
+header {
+	display: flex;
+	flex-direction: column;
+}
+
 header > img {
 	width: 100%;
 	min-height: 300px;
@@ -85,12 +90,25 @@ header .blog-title {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin: 10px;
 }
 
 header .blog-title img {
 	width: 90px;
 	border-radius: 90px;
 	margin: 10px;
+}
+
+@media screen and (min-width: 960px) {
+	header {
+		flex-direction: row-reverse;
+		align-items: center;
+		justify-content: center;
+	}
+	header > img {
+		width: 40%;
+		max-width: 600px;
+	}
 }
 
 article {

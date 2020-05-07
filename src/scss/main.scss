@@ -11,6 +11,10 @@ $accent-color: #e20e95;
 $standard-spacing: 10px;
 $standard-inner-padding: 20px;
 
+$breakpoint-tablet: 640px;
+$breakpoint-desktop: 960px;
+$breakpoint-desktop-large: 1220px;
+
 // $one-third: 1/3 * 100%;
 // $one-seventh: 1/7 * 100%;
 * {
@@ -35,6 +39,8 @@ h2 {
     margin: $standard-spacing auto;
 }
 header {
+    display: flex;
+    flex-direction: column;
     > img {
         width: 100%;
         min-height: 300px;
@@ -44,10 +50,21 @@ header {
         display: flex;
         align-items: center;
         justify-content: center;
+        margin: $standard-spacing;
         img {
             width: 90px;
             border-radius: 90px;
             margin: $standard-spacing;
+        }
+    }
+    @media screen and (min-width: $breakpoint-desktop) {
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+
+        > img {
+            width: 40%;
+            max-width: 600px;
         }
     }
 }
