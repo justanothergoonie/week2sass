@@ -24,8 +24,28 @@ body {
 }
 
 article {
-    h2 {
-        color: $accent-color;
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header {
+    > img {
+        width: 100%;
+        min-height: 300px;
+        object-fit: cover;
+    }
+    .blog-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 90px;
+            border-radius: 90px;
+            margin: $header-spacing;
+        }
     }
 }
 

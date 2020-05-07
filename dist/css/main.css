@@ -62,8 +62,31 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-article h2 {
-	color: #e20e95;
+article {
+	width: 100%;
+	max-width: 1024px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+header > img {
+	width: 100%;
+	min-height: 300px;
+	-o-object-fit: cover;
+	   object-fit: cover;
+}
+
+header .blog-title {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+header .blog-title img {
+	width: 90px;
+	border-radius: 90px;
+	margin: 10px;
 }
 
 h1 {
