@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: $primary-background;
+    color: $primary-text-color;
+
+    font-family: Helvetica, Arial, sans-serif;
+}
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: $standard-spacing auto;
+}
+
+h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: $standard-spacing auto;
+}
+footer {
+    background: $secondary-background;
+    color: $secondary-text-color;
+    padding: $standard-inner-padding;
+    a {
+        color: $accent-color;
+    }
+}

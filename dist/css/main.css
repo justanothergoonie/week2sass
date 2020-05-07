@@ -74,6 +74,16 @@ h2 {
 	margin: 10px auto;
 }
 
+footer {
+	background: #1b1c21;
+	color: #ffffff;
+	padding: 20px;
+}
+
+footer a {
+	color: #e20e95;
+}
+
 header {
 	display: flex;
 	flex-direction: column;
@@ -160,16 +170,6 @@ article {
 	-webkit-transform: translateY(0px);
 	    -ms-transform: translateY(0px);
 	        transform: translateY(0px);
-}
-
-footer {
-	background: #1b1c21;
-	color: #ffffff;
-	padding: 20px;
-}
-
-footer a {
-	color: #e20e95;
 }
 
 /*# sourceMappingURL=main.css.map */
