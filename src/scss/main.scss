@@ -9,6 +9,7 @@ $secondary-text-color: #ffffff;
 $accent-color: #e20e95;
 
 $standard-spacing: 10px;
+$standard-inner-padding: 20px;
 
 // $one-third: 1/3 * 100%;
 // $one-seventh: 1/7 * 100%;
@@ -20,9 +21,19 @@ body {
     background: $primary-background;
     color: $primary-text-color;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
+}
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: $standard-spacing auto;
 }
 
+h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: $standard-spacing auto;
+}
 header {
     > img {
         width: 100%;
@@ -47,29 +58,33 @@ article {
     display: flex;
     flex-direction: column;
 }
-h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin: $standard-spacing auto;
-}
 
-h2 {
-    font-size: 1.6rem;
-    font-weight: bold;
-    margin: $standard-spacing auto;
-}
+.article-image {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
 
-.pull-quote {
-    font-weight: bold;
+    img {
+        width: 100%;
+    }
 
-    &.angry {
-        color: $accent-color;
+    figcaption {
+        position: absolute;
+        padding: $standard-inner-padding;
+        width: 100%;
+        background: $secondary-background;
+        color: $secondary-text-color;
+        text-align: center;
+        left: 0;
+        bottom: 0;
     }
 }
 footer {
     background: $secondary-background;
     color: $secondary-text-color;
-    padding: 20px;
+    padding: $standard-inner-padding;
     a {
         color: $accent-color;
     }
