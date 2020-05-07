@@ -67,6 +67,10 @@ footer {
 	padding: 20px;
 }
 
+article {
+	width: 33.33333%;
+}
+
 h1 {
 	font-size: 2rem;
 }
