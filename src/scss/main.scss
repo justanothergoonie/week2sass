@@ -65,6 +65,11 @@ article {
     display: flex;
     align-content: center;
     justify-content: center;
+    overflow: hidden;
+
+    > * {
+        transition: 0.2s;
+    }
 
     img {
         width: 100%;
@@ -79,6 +84,17 @@ article {
         text-align: center;
         left: 0;
         bottom: 0;
+
+        transform: translateY(100%);
+    }
+
+    &:hover {
+        img {
+            transform: scale(1.2);
+        }
+        figcaption {
+            transform: translateY(0px);
+        }
     }
 }
 footer {

@@ -107,6 +107,11 @@ article {
 	display: flex;
 	align-content: center;
 	justify-content: center;
+	overflow: hidden;
+}
+
+.article-image > * {
+	transition: 0.2s;
 }
 
 .article-image img {
@@ -122,6 +127,21 @@ article {
 	text-align: center;
 	left: 0;
 	bottom: 0;
+	-webkit-transform: translateY(100%);
+	    -ms-transform: translateY(100%);
+	        transform: translateY(100%);
+}
+
+.article-image:hover img {
+	-webkit-transform: scale(1.2);
+	    -ms-transform: scale(1.2);
+	        transform: scale(1.2);
+}
+
+.article-image:hover figcaption {
+	-webkit-transform: translateY(0px);
+	    -ms-transform: translateY(0px);
+	        transform: translateY(0px);
 }
 
 footer {
