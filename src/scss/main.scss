@@ -1,6 +1,6 @@
 @import 'reset';
 
-$primary-background: #fffdf3;
+$primary-background: magenta;
 $secondary-background: #1b1c21;
 
 $primary-text-color: #000000;
@@ -11,6 +11,7 @@ $secondary-text-color: #ffffff;
 
 body {
 	background: $primary-background;
+	color: $primary-text-color;
 }
 footer {
 	background: $secondary-background;
