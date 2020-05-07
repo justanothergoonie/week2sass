@@ -1,12 +1,15 @@
 @import 'reset';
 
-$primary-background: magenta;
+$primary-background: #fffdf3;
 $secondary-background: #1b1c21;
 
 $primary-text-color: #000000;
 $secondary-text-color: #ffffff;
 
+$accent-color: #e20e95;
+
 $one-third: 1/3 * 100%;
+// $one-seventh: 1/7 * 100%;
 * {
 	box-sizing: border-box;
 }
@@ -22,8 +25,16 @@ footer {
 }
 article {
 	width: $one-third;
+
+	h2 {
+		color: $accent-color;
+	}
 }
 
 h1 {
 	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1.6rem;
 }

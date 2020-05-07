@@ -57,7 +57,7 @@ table {
 }
 
 body {
-	background: magenta;
+	background: #fffdf3;
 	color: #000000;
 }
 
@@ -71,8 +71,16 @@ article {
 	width: 33.33333%;
 }
 
+article h2 {
+	color: #e20e95;
+}
+
 h1 {
 	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1.6rem;
 }
 
 /*# sourceMappingURL=main.css.map */
