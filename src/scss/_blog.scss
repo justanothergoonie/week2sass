@@ -1,3 +1,18 @@
+$primary-background: #fffdf3;
+$secondary-background: #1b1c21;
+
+$primary-text-color: #000000;
+$secondary-text-color: #ffffff;
+
+$accent-color: #e20e95;
+
+$standard-spacing: 10px;
+$standard-inner-padding: 20px;
+
+$breakpoint-tablet: 640px;
+$breakpoint-desktop: 960px;
+$breakpoint-desktop-large: 1220px;
+
 header {
     display: flex;
     flex-direction: column;
@@ -77,4 +92,10 @@ article {
 
 .article-image-wack {
     @extend .article-image;
+
+    &:hover {
+        img {
+            transform: rotate(360deg);
+        }
+    }
 }
